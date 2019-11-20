@@ -6,6 +6,11 @@ h1 {
   font-size: 40px;
 }
 
+h2 {
+  font-family: 'PT Serif', serif;
+  font-size: 30px;
+}
+
 a {
   color: #9C5A78;
   text-decoration: none
@@ -14,6 +19,7 @@ a {
 p {
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 nav ul{
@@ -57,12 +63,11 @@ nav a:hover{
   border: 2px solid black;
 }
 
-
 footer{
   background-color: #474747;
   color: white;
   grid-column: 1 / -1;
-  grid-row: 4/5;
+  grid-row: 5/6;
   padding-top: 30px;
   text-align: center;
 }
@@ -85,11 +90,11 @@ footer{
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px 300px 1fr 150px; 
+  grid-template-rows: 70px 300px 1fr 1fr 150px; 
   width: 100vw; 
 }
 
-.nav{
+.nav {
   grid-row: 1/2;
   grid-column: 1/-1;
 
@@ -123,9 +128,23 @@ header {
   text-align: center;
 }
 
-.body-text {
-  grid-column: 1/-1;
+.intro {
   grid-row: 3/4;
+  padding: 50px 100px 50px 50px;
+}
+
+.intro img {
+  padding-right: 50px;
+}
+
+.recent-news {
+  grid-row: 4/5;
+  margin-left: 50px;
+}
+
+.body-text {
+  padding-top: 30px;
+  padding-left: 50px;
 }
 
 @media only screen and (min-width: 800px) {
