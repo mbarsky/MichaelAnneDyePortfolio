@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+
+h1 {
+  font-family: 'PT Serif', serif;
+  font-size: 40px;
+}
+
+a {
+  color: #9C5A78;
+  text-decoration: none
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display: inline-block;
+  padding-right: 20px;
+  font-family: 'Rubik', sans-serif;
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav a:hover{
+  color: #FFA198;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus {
+  top: 0;
+}
+
+*:focus {
+  border: 2px solid black;
+}
+
+.press-container{
+  display: grid;
+  grid-template-columns: 100px auto auto 100px;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+.recent-press{
+  grid-column: 2 / span 1;
+  grid-row: 1;
+  justify-content: center;
+  align-self: center;
+}
+
+.homes-image{
+  grid-column: 3 / span 1;
+  grid-row: 1;
+}
+
+.press-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.early-press{
+  grid-column: 3 / span 1;
+  grid-row: 2;
+  justify-content: center;
+  align-self: center;
+}
+
+.bluebuilding-image{
+  grid-column: 2 / span 1;
+  grid-row: 2;
+}
