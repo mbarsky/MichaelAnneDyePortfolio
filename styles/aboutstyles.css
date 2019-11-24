@@ -99,11 +99,7 @@ footer{
 }
 header{
     background-attachment: fixed; /* Parallax effect */
-<<<<<<< HEAD
     background-image: url("../images/mad9.jpg");      /* Your code here - Link to header.jpg in the images folder */
-=======
-    background-image: url("../images/research.png");      /* Your code here - Link to header.jpg in the images folder */
->>>>>>> 7e8537181305cd1e42635217d54fcce6498d690e
     background-position: center;  /* Parallax effect */
     background-repeat: no-repeat; /* Parallax effect */
     background-size: cover;       /* Parallax effect */
