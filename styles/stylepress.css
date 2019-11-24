@@ -4,6 +4,13 @@
 h1 {
   font-family: 'PT Serif', serif;
   font-size: 40px;
+  margin: 30px;
+}
+
+h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 a {
@@ -38,6 +45,21 @@ nav a:hover{
   color: #FFA198;
 }
 
+header{
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url("../images/homes.jpg");      /* Your code here - Link to header.jpg in the images folder */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 300px;
+  width: 100%               /* Parallax effect */
+
+  /*Your code here - cover the entire row*/
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
 .skip a{
   background: white;
   left: 0;
@@ -57,9 +79,27 @@ nav a:hover{
   border: 2px solid black;
 }
 
+.container{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 300px;
+  width: 100vw;
+}
+
+.nav {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+
+  background-color: #fafafa;
+  text-align: center;
+  padding-top: 27px;
+  border: 1px solid #eee;
+}
+
 .press-container{
   display: grid;
-  grid-template-columns: 100px auto auto 100px;
+  grid-template-columns: 100px auto 100px;
   grid-template-rows: 1fr 1fr;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
@@ -72,7 +112,7 @@ nav a:hover{
   align-self: center;
 }
 
-.homes-image{
+/* .homes-image{
   grid-column: 3 / span 1;
   grid-row: 1;
 }
@@ -80,16 +120,10 @@ nav a:hover{
 .press-container img{
   width: 100%;
   height: 100%;
-}
+} */
 
-.early-press{
-  grid-column: 3 / span 1;
-  grid-row: 2;
-  justify-content: center;
-  align-self: center;
-}
 
-.bluebuilding-image{
+/* .bluebuilding-image{
   grid-column: 2 / span 1;
   grid-row: 2;
-}
+} */
