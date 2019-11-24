@@ -11,6 +11,10 @@ h2 {
   font-size: 30px;
 }
 
+.current {
+  text-decoration: underline;
+}
+
 a {
   color: #9C5A78;
   text-decoration: none
@@ -89,8 +93,8 @@ footer{
 .container{
 
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 70px 300px 1fr 1fr 300px 150px; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px 300px auto auto auto 150px; 
   width: 100vw; 
 }
 
@@ -130,6 +134,7 @@ header {
 
 .intro {
   grid-row: 3/4;
+  grid-column: 2/-2;
   padding: 50px 100px 50px 50px;
 }
 
@@ -140,6 +145,7 @@ header {
 .recent-news {
   grid-row: 4/5;
   margin-left: 50px;
+  grid-column: 2/-2;
 }
 
 .body-text {
@@ -149,9 +155,14 @@ header {
 
 .image-gallery {
   grid-row: 5/6;
+  grid-column: 2/-2;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  flex-direction: row;
+  max-height: 100vh;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .image-gallery img {
@@ -160,10 +171,3 @@ header {
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
     max-width: 25vw;
 
-@media only screen and (min-width: 800px) {
-
-  .nav{
-    grid-column: 1/-1;
-    grid-row: 1/2;
-    
-  }
