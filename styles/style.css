@@ -11,6 +11,10 @@ h2 {
   font-size: 30px;
 }
 
+.current {
+  text-decoration: underline;
+}
+
 a {
   color: #9C5A78;
   text-decoration: none
