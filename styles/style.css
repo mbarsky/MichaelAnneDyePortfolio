@@ -106,7 +106,7 @@ footer{
 
 header{
   background-attachment: fixed; /* Parallax effect */
-  background-image: url("../images/Cuba.jpg");      /* Your code here - Link to header.jpg in the images folder */
+  background-image: url("../images/mad1.jpg");      /* Your code here - Link to header.jpg in the images folder */
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
