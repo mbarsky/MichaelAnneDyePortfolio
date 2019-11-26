@@ -101,7 +101,7 @@ footer{
 .nav {
   grid-row: 1/2;
   grid-column: 1/-1;
-
+  text-color: #192739;
   background-color: #fafafa;
   text-align: center;
   padding-top: 27px;
@@ -110,7 +110,7 @@ footer{
 
 header{
   background-attachment: fixed; /* Parallax effect */
-  background-image: url("../images/mad1.jpg");      /* Your code here - Link to header.jpg in the images folder */
+  background-image: url("../images/header1.jpg");      /* Your code here - Link to header.jpg in the images folder */
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
