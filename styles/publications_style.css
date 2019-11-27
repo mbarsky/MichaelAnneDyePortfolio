@@ -33,9 +33,9 @@ nav ul{
 }
 
 nav li{
-    display: inline-block;
-    padding-right: 20px;
-    font-family: 'Rubik', sans-serif;
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Rubik', sans-serif;
 }
 
 nav a{
@@ -116,7 +116,7 @@ footer{
   display: grid;
   grid-template-columns: 100px 500px 100px;
   grid-row-gap: 15px;
-  grid-template-rows: 30px auto auto auto auto auto auto auto auto auto 100px;
+  grid-template-rows: 115px auto auto auto auto auto auto auto auto auto 100px;
   width: 100vw;
 }
 
@@ -330,7 +330,13 @@ img:hover{
     padding-top: 27px;
     padding-bottom: 27px;
     border: 1px solid #eee;
-}
+  }
+
+  nav li{
+      display: inline-block;
+      padding-right: 20px;
+      font-family: 'Rubik', sans-serif;
+  }
 
   .publications-2019-image{
      grid-column-start: 2;
