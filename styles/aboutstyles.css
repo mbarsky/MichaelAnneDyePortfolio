@@ -83,34 +83,414 @@ footer{
 .container{
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
   width: 100vw;
 }
 
 .nav{
   grid-row: 1/2;
   grid-column: 1/-1;
-
+  text-color: #192739;
   background-color: #fafafa;
   text-align: center;
   padding-top: 27px;
+  padding-bottom: 27px;
   border: 1px solid #eee;
 }
+
 header{
     background-attachment: fixed; /* Parallax effect */
-    background-image: url("../images/mad9.jpg");      /* Your code here - Link to header.jpg in the images folder */
+    background-image: url("../images/header2.jpg");      /* Your code here - Link to header.jpg in the images folder */
     background-position: center;  /* Parallax effect */
     background-repeat: no-repeat; /* Parallax effect */
     background-size: cover;       /* Parallax effect */
     color: white;
-    height: 400px;                /* Parallax effect */
+    height: 300px;                /* Parallax effect */
 
     /*Your code here - cover the entire row*/
     grid-column: 1/-1;
     grid-row: 2/3;
   }
-  .textArea{
-    grid-column: 2/-2;
-    grid-row: 4/5;
+
+  header h1 {
+    font-family: "PT Serif", "serif";
+    text-align: center;
+    padding-top: 80px;
+    font-size: 50px;
   }
+
+  header {
+    text-align: center;
+  }
+
+  header p {
+    color: white;
+  }
+
+  .conferenceImage{
+    grid-column: 4/7;
+    grid-row: 4/6;
+    padding-left: 30px;
+  }
+  .conferenceImage img{
+    width: 100%;
+    height: auto;
+  }
+  .textArea{
+    grid-column: 1/4;
+    grid-row: 4/6;
+  }
+  .textArea p{
+    font-size: 1.5em;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .textArea h1{
+    padding-left: 30px;
+  }
+  .textAreaTwo{
+    grid-column: 1/7;
+    grid-row: 6/7;
+    padding-left: 30px;
+  }
+  .journey{
+    grid-column: 3/7;
+    grid-row: 7/8;
+  }
+  .headzz{
+    padding-left: 30px;
+  }
+  @media screen and (max-width: 1050px){
+    .container{
+        /*Your code here */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        width: 100vw;
+      }
+      .nav{
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        text-color: #192739;
+        background-color: #fafafa;
+        text-align: center;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        border: 1px solid #eee;
+      }
+      
+      header{
+          background-attachment: fixed; /* Parallax effect */
+          background-image: url("../images/header2.jpg");      /* Your code here - Link to header.jpg in the images folder */
+          background-position: center;  /* Parallax effect */
+          background-repeat: no-repeat; /* Parallax effect */
+          background-size: cover;       /* Parallax effect */
+          color: white;
+          height: 300px;                /* Parallax effect */
+      
+          /*Your code here - cover the entire row*/
+          grid-column: 1/-1;
+          grid-row: 2/3;
+        }
+      
+        header h1 {
+          font-family: "PT Serif", "serif";
+          text-align: center;
+          padding-top: 80px;
+          font-size: 50px;
+        }
+      
+        header {
+          text-align: center;
+        }
+      
+        header p {
+          color: white;
+        }
+      .conferenceImage{
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        padding-left: 30px;
+      }
+      .conferenceImage img{
+        width: 100%;
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        height: auto;
+      }
+      .textArea{
+        grid-column: 1/-1;
+        grid-row: 3/4;
+      }
+      .textArea p{
+        font-size: 1em;
+        padding-left: 30px;
+        padding-top: 20px;
+      }
+      .textArea h1{
+        padding-left: 30px;
+      }
+      .textAreaTwo{
+        grid-column: 1/-1;
+        grid-row: 5/6;
+        padding-left: 30px;
+      }
+      .journey{
+        grid-column: 1/-1;
+        grid-row: 6/7;
+      }
+    }
+    @media screen and (max-width: 1050px){
+      .container{
+          /*Your code here */
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: auto auto auto auto auto auto auto;
+          width: 100vw;
+        }
+        .nav{
+          grid-row: 1/2;
+          grid-column: 1/-1;
+          text-color: #192739;
+          background-color: #fafafa;
+          text-align: center;
+          padding-top: 27px;
+          padding-bottom: 27px;
+          border: 1px solid #eee;
+        }
+        
+        header{
+            background-attachment: fixed; /* Parallax effect */
+            background-image: url("../images/header2.jpg");      /* Your code here - Link to header.jpg in the images folder */
+            background-position: center;  /* Parallax effect */
+            background-repeat: no-repeat; /* Parallax effect */
+            background-size: cover;       /* Parallax effect */
+            color: white;
+            height: 300px;                /* Parallax effect */
+        
+            /*Your code here - cover the entire row*/
+            grid-column: 1/-1;
+            grid-row: 2/3;
+          }
+        
+          header h1 {
+            font-family: "PT Serif", "serif";
+            text-align: center;
+            padding-top: 80px;
+            font-size: 50px;
+          }
+        
+          header {
+            text-align: center;
+          }
+        
+          header p {
+            color: white;
+          }
+        .conferenceImage{
+          grid-column: 1/-1;
+          grid-row: 4/5;
+          padding-left: 30px;
+        }
+        .conferenceImage img{
+          width: 100%;
+          grid-column: 1/-1;
+          grid-row: 4/5;
+          height: auto;
+        }
+        .textArea{
+          grid-column: 1/-1;
+          grid-row: 3/4;
+        }
+        .textArea p{
+          font-size: 1em;
+          padding-left: 30px;
+          padding-top: 20px;
+        }
+        .textArea h1{
+          padding-left: 30px;
+        }
+        .textAreaTwo{
+          grid-column: 1/-1;
+          grid-row: 5/6;
+          padding-left: 30px;
+        }
+        .journey{
+          grid-column: 1/-1;
+          grid-row: 6/7;
+        }
+      }
+      @media screen and (max-width: 1050px){
+        .container{
+            /*Your code here */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto auto auto auto auto;
+            width: 100vw;
+            justify-content: center; 
+          }
+          .nav{
+            grid-row: 1/2;
+            grid-column: 1/-1;
+            text-color: #192739;
+            background-color: #fafafa;
+            text-align: center;
+            padding-top: 27px;
+            padding-bottom: 27px;
+            border: 1px solid #eee;
+          }
+          
+          header{
+              background-attachment: fixed; /* Parallax effect */
+              background-image: url("../images/header2.jpg");      /* Your code here - Link to header.jpg in the images folder */
+              background-position: center;  /* Parallax effect */
+              background-repeat: no-repeat; /* Parallax effect */
+              background-size: cover;       /* Parallax effect */
+              color: white;
+              height: 300px;                /* Parallax effect */
+          
+              /*Your code here - cover the entire row*/
+              grid-column: 1/-1;
+              grid-row: 2/3;
+            }
+          
+            header h1 {
+              font-family: "PT Serif", "serif";
+              text-align: center;
+              padding-top: 80px;
+              font-size: 50px;
+            }
+          
+            header {
+              text-align: center;
+            }
+          
+            header p {
+              color: white;
+            }
+          .conferenceImage{
+            grid-column: 1/-1;
+            grid-row: 4/5;
+            padding-left: 30px;
+            align-self: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            justify-content: center;
+            
+          }
+          .conferenceImage img{
+            grid-column: 1/-1;
+            grid-row: 4/5;
+            width: 70%;
+            height: auto;
+            justify-items: center;
+            align-self: center;
+            justify-self: center;
+            justify-content: center;
+             
+          }
+          .textArea{
+            grid-column: 1/-1;
+            grid-row: 3/4;
+          }
+          .textArea p{
+            font-size: 1em;
+            padding-left: 30px;
+            padding-top: 20px;
+          }
+          .textArea h1{
+            padding-left: 30px;
+          }
+          .textAreaTwo{
+            grid-column: 1/-1;
+            grid-row: 5/6;
+            padding-left: 30px;
+          }
+          .journey{
+            grid-column: 1/-1;
+            grid-row: 6/7;
+          }
+        }
+        @media screen and (max-width: 600px){
+          .container{
+              /*Your code here */
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: auto auto auto auto auto auto auto;
+              width: 100vw;
+            }
+            .nav{
+              grid-row: 1/2;
+              grid-column: 1/-1;
+              text-color: #192739;
+              background-color: #fafafa;
+              text-align: center;
+              padding-top: 27px;
+              padding-bottom: 27px;
+              border: 1px solid #eee;
+            }
+            
+            header{
+                background-attachment: fixed; /* Parallax effect */
+                background-image: url("../images/header2.jpg");      /* Your code here - Link to header.jpg in the images folder */
+                background-position: center;  /* Parallax effect */
+                background-repeat: no-repeat; /* Parallax effect */
+                background-size: cover;       /* Parallax effect */
+                color: white;
+                height: 300px;                /* Parallax effect */
+            
+                /*Your code here - cover the entire row*/
+                grid-column: 1/-1;
+                grid-row: 2/3;
+              }
+            
+              header h1 {
+                font-family: "PT Serif", "serif";
+                text-align: center;
+                padding-top: 80px;
+                font-size: 50px;
+              }
+            
+              header {
+                text-align: center;
+              }
+            
+              header p {
+                color: white;
+              }
+            .conferenceImage{
+              grid-column: 1/-1;
+              grid-row: 4/5;
+              padding-left: 30px;
+            }
+            .conferenceImage img{
+              width: 100%;
+              grid-column: 1/-1;
+              grid-row: 4/5;
+              height: auto;
+            }
+            .textArea{
+              grid-column: 1/-1;
+              grid-row: 3/4;
+            }
+            .textArea p{
+              font-size: 1em;
+              padding-left: 30px;
+              padding-top: 20px;
+            }
+            .textArea h1{
+              padding-left: 30px;
+            }
+            .textAreaTwo{
+              grid-column: 1/-1;
+              grid-row: 5/6;
+              padding-left: 30px;
+            }
+            .journey{
+              grid-column: 1/-1;
+              grid-row: 6/7;
+            }
+          }
+      
