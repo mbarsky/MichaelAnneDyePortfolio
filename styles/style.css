@@ -107,13 +107,9 @@ footer a {
 }
 
 header{
-  background-attachment: fixed; /* Parallax effect */
-  background-image: url("../images/header1.jpg");      /* Your code here - Link to header.jpg in the images folder */
-  background-position: center;  /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;       /* Parallax effect */
   color: white;
-  height: 300px;                /* Parallax effect */
+  height: 300px;              
+  background-color: #b5584c;
 
   grid-column: 1/-1;
   grid-row: 2/3;
