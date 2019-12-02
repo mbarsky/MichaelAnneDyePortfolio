@@ -73,7 +73,19 @@ footer{
   grid-column: 1 / -1;
   grid-row: 6/7;
   padding-top: 30px;
-  text-align: center;
+  text-align: left;
+  min-height: 150px;
+}
+
+footer a, footer p {
+  font-family: 'Rubik', sans-serif;
+  margin-left: 50px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: underline;
 }
 
 .container-h {
