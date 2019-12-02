@@ -277,6 +277,11 @@ header {
   }
 
 /*********** PUBLICATION STYLE ***************/
+
+.pub-header {
+  background-color: #935E77;
+}
+
 .pub-container {
   display: grid;
   grid-template-columns: 100px 500px 100px;
