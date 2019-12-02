@@ -52,7 +52,7 @@ li a:visited {
       color: #192739;
 }
 
-a {
+.pub-container a {
     color: #935E77;
     text-decoration: none;
 }
