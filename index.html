@@ -12,14 +12,15 @@
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <main class="container-h">
       <div class="nav">
-      <nav>
-        <ul>
-          <li><a href="index.html" class = "current">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="press.html">Press</a></li>
-          <li><a href="publications.html">Publications</a></li>
-        </ul>
-      </nav>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html" >About</a>
+          <a href="press.html">Press</a>
+          <a href="publications.html">Publications</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
     </div>
     <header>
     <h1>Michaelanne Dye</h1><br><br>
@@ -60,4 +61,14 @@
     </footer>
   </main>
   </body>
+  <script>
+        function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </html>

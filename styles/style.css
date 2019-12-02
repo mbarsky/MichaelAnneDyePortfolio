@@ -47,6 +47,35 @@ nav a{
 nav a:hover{
   color: #FFA198;
 }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4E5D6C;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
 
 .skip a{
   background: white;
@@ -108,7 +137,7 @@ footer a {
 
 header{
   color: white;
-  height: 300px;              
+  height: 300px;
   background-color: #b5584c;
 
   grid-column: 1/-1;
@@ -196,7 +225,7 @@ header {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 120px 300px;
+  grid-template-rows: auto 300px;
   width: 100vw;
 }
 
@@ -312,9 +341,9 @@ header {
 
 .pub-container {
   display: grid;
-  grid-template-columns: 100px 500px 100px;
+  grid-template-columns: 1fr 5fr 1fr;
 /*  grid-row-gap: 15px;*/
-  grid-template-rows: 140px auto auto auto auto auto auto auto auto auto 150px;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto 150px;
   width: 100vw;
 }
 
@@ -580,7 +609,7 @@ img:hover{
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 650px) {
 
   /*********** HOME PAGE STYLE ***************/
 
@@ -634,7 +663,7 @@ img:hover{
   /*********** PUBLICATION STYLE ***************/
   .pub-container{
     display:grid;
-    grid-template-rows: 70px 300px 800px 800px 800px 800px 800px 800px 800px 800px 150px;
+    grid-template-rows: auto 300px 800px 800px 800px 800px 800px 800px 800px 800px 150px;
     grid-template-columns: 50px auto 500px auto 50px;
   }
 
@@ -871,28 +900,28 @@ img:hover{
         text-align: center;
         border: 1px solid #eee;
       }
-      
+
       .aboutHeader{
           background-color:#8E446B;      /* Parallax effect */
           color: white;
           height: 300px;                /* Parallax effect */
-      
+
           /*Your code here - cover the entire row*/
           grid-column: 1/-1;
           grid-row: 2/3;
         }
-      
+
         .aboutHeader h1 {
           font-family: "PT Serif", "serif";
           text-align: center;
           padding-top: 40px;
           font-size: 50px;
         }
-      
+
         .aboutHeader{
           text-align: center;
         }
-      
+
         .aboutHeader p {
           color: white;
         }
@@ -948,28 +977,28 @@ img:hover{
           text-align: center;
           border: 1px solid #eee;
         }
-        
+
         .aboutHeader{
             background-color:#8E446B;       /* Parallax effect */
             color: white;
             height: 300px;                /* Parallax effect */
-        
+
             /*Your code here - cover the entire row*/
             grid-column: 1/-1;
             grid-row: 2/3;
           }
-        
+
           .aboutHeader h1 {
             font-family: "PT Serif", "serif";
             text-align: center;
             padding-top: 25px;
             font-size: 50px;
           }
-        
+
           .aboutHeader {
             text-align: center;
           }
-        
+
           .aboutHeader p {
             color: white;
           }
@@ -1016,7 +1045,7 @@ img:hover{
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: auto auto auto auto auto auto auto;
             width: 100vw;
-            justify-content: center; 
+            justify-content: center;
           }
           .nav{
             grid-row: 1/2;
@@ -1026,28 +1055,28 @@ img:hover{
             text-align: center;
             border: 1px solid #eee;
           }
-          
+
           .aboutHeader{
               background-color:#8E446B;       /* Parallax effect */
               color: white;
               height: 300px;                /* Parallax effect */
-          
+
               /*Your code here - cover the entire row*/
               grid-column: 1/-1;
               grid-row: 2/3;
             }
-          
+
             .aboutHeader h1 {
               font-family: "PT Serif", "serif";
               text-align: center;
               padding-top: 80px;
               font-size: 50px;
             }
-          
+
             .aboutHeader {
               text-align: center;
             }
-          
+
             .aboutHeader p {
               color: white;
             }
@@ -1060,7 +1089,7 @@ img:hover{
             justify-items: center;
             justify-self: center;
             justify-content: center;
-            
+
           }
           .conferenceImage img{
             grid-column: 1/-1;
@@ -1071,7 +1100,7 @@ img:hover{
             align-self: center;
             justify-self: center;
             justify-content: center;
-             
+
           }
           .textArea{
             grid-column: 1/-1;
@@ -1140,28 +1169,28 @@ img:hover{
               text-align: center;
               border: 1px solid #eee;
             }
-            
+
             .aboutHeader{
                 background-color: #8E446B;     /* Parallax effect */
                 color: white;
                 height: 300px;                /* Parallax effect */
-            
+
                 /*Your code here - cover the entire row*/
                 grid-column: 1/-1;
                 grid-row: 2/3;
               }
-            
+
               .aboutHeader h1 {
                 font-family: "PT Serif", "serif";
                 text-align: center;
                 padding-top: 25px;
                 font-size: 50px;
               }
-            
+
               .aboutHeader {
                 text-align: center;
               }
-            
+
               .aboutHeader p {
                 color: white;
               }
@@ -1199,8 +1228,8 @@ img:hover{
             }
           }
         }
-        
-      
+
+
 
 @media screen and (prefers-reduced-motion: reduce){
   html{
@@ -1222,6 +1251,3 @@ img:hover{
     top:0;
   }
 }
-
-
-
