@@ -123,6 +123,24 @@ nav a:hover{
   margin: 40px;
 }
 
+#press-footer{
+  background-color: #474747;
+  color: white;
+  padding-top: 30px;
+  text-align: left;
+  min-height: 150px;
+  margin: 0px;
+}
+
+#press-footer a, #press-footer p{
+  color: white;
+  text-decoration: underline;
+  font-family: 'Rubik', sans-serif;
+  margin-left: 50px;
+  line-height: 1.5;
+}
+
+
 
 @media screen and (min-width: 750px){
 
@@ -140,10 +158,11 @@ nav a:hover{
     grid-template-rows: 70px 300px;
   }
 
+
   .press-container{
     display: grid;
     grid-template-columns: 50px auto auto auto 50px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr auto;
     grid-row-gap: 20px;
     grid-column-gap: 30px;
   }
@@ -227,12 +246,27 @@ nav a:hover{
     grid-row: 5;
   }
 
+  #press-footer{
+    background-color: #474747;
+    color: white;
+    grid-column: 1 / -1;
+    grid-row: -1;
+    padding-top: 30px;
+    text-align: left;
+    min-height: 150px;
+    margin: 0;
+  }
+
+
+
+
+
 }
 
 @media screen and (min-width: 1150px){
   .press-container{
     grid-template-columns: 100px auto auto auto auto 100px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr auto;
   }
 
   .entry-1{

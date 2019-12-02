@@ -17,7 +17,7 @@ p {
 .current {
   text-decoration: underline;
 }
-header p{
+.aboutHeader p{
   padding-left: 10px;
   padding-right: 10px;;
 }
@@ -134,7 +134,7 @@ footer{
   border: 1px solid #eee;
 }
 
-header{
+.aboutHeader{
     background-attachment: fixed; /* Parallax effect */
     background-image: url("../images/header2.jpg");      /* Your code here - Link to header.jpg in the images folder */
     background-position: center;  /* Parallax effect */
@@ -148,18 +148,18 @@ header{
     grid-row: 2/3;
   }
 
-  header h1 {
+  .aboutHeader h1 {
     font-family: "PT Serif", "serif";
     text-align: center;
     padding-top: 80px;
     font-size: 50px;
   }
 
-  header {
+  .aboutHeader {
     text-align: center;
   }
 
-  header p {
+  .aboutHeader p {
     color: white;
   }
 
@@ -218,7 +218,7 @@ header{
         border: 1px solid #eee;
       }
       
-      header{
+      .aboutHeader{
           background-attachment: fixed; /* Parallax effect */
           background-image: url("../images/header2.jpg");      /* Your code here - Link to header.jpg in the images folder */
           background-position: center;  /* Parallax effect */
@@ -232,18 +232,18 @@ header{
           grid-row: 2/3;
         }
       
-        header h1 {
+        .aboutHeader h1 {
           font-family: "PT Serif", "serif";
           text-align: center;
           padding-top: 40px;
           font-size: 50px;
         }
       
-        header {
+        .aboutHeader{
           text-align: center;
         }
       
-        header p {
+        .aboutHeader p {
           color: white;
         }
       .conferenceImage{
@@ -301,7 +301,7 @@ header{
           border: 1px solid #eee;
         }
         
-        header{
+        .aboutHeader{
             background-attachment: fixed; /* Parallax effect */
             background-image: url("../images/header2.jpg");      /* Your code here - Link to header.jpg in the images folder */
             background-position: center;  /* Parallax effect */
@@ -315,18 +315,18 @@ header{
             grid-row: 2/3;
           }
         
-          header h1 {
+          .aboutHeader h1 {
             font-family: "PT Serif", "serif";
             text-align: center;
             padding-top: 25px;
             font-size: 50px;
           }
         
-          header {
+          .aboutHeader {
             text-align: center;
           }
         
-          header p {
+          .aboutHeader p {
             color: white;
           }
         .conferenceImage{
@@ -385,7 +385,7 @@ header{
             border: 1px solid #eee;
           }
           
-          header{
+          .aboutHeader{
               background-attachment: fixed; /* Parallax effect */
               background-image: url("../images/header2.jpg");      /* Your code here - Link to header.jpg in the images folder */
               background-position: center;  /* Parallax effect */
@@ -399,18 +399,18 @@ header{
               grid-row: 2/3;
             }
           
-            header h1 {
+            .aboutHeader h1 {
               font-family: "PT Serif", "serif";
               text-align: center;
               padding-top: 80px;
               font-size: 50px;
             }
           
-            header {
+            .aboutHeader {
               text-align: center;
             }
           
-            header p {
+            .aboutHeader p {
               color: white;
             }
           .conferenceImage{
@@ -505,7 +505,7 @@ header{
               border: 1px solid #eee;
             }
             
-            header{
+            .aboutHeader{
                 background-attachment: fixed; /* Parallax effect */
                 background-image: url("../images/header2.jpg");      /* Your code here - Link to header.jpg in the images folder */
                 background-position: center;  /* Parallax effect */
@@ -519,18 +519,18 @@ header{
                 grid-row: 2/3;
               }
             
-              header h1 {
+              .aboutHeader h1 {
                 font-family: "PT Serif", "serif";
                 text-align: center;
                 padding-top: 25px;
                 font-size: 50px;
               }
             
-              header {
+              .aboutHeader {
                 text-align: center;
               }
             
-              header p {
+              .aboutHeader p {
                 color: white;
               }
             .conferenceImage{

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <!-- <link rel="stylesheet" type="text/css" href="styles/html5_reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/html5_reset.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/aboutstyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,18 +13,18 @@
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <div class="container">
       <div class="nav">
-      <nav>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class = "current">About Me</a></li>
-          <li><a href="press.html">Press</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
-        </ul>
-      </nav>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="press.html">Press</a>
+          <a href="publications.html">Publications</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
     </div>
 
-    <header>
+    <header class="aboutHeader">
     <h1>Michaelanne Dye</h1>
     <p>Presidential Postdoc, School of Information, University of Michigan</p>
     </header>
@@ -55,7 +55,7 @@
     <img class= "journey" src="images/journey.png" align="left" height="300px" alt="journey image">
   </body>
   <script>
-    function myFunction() {
+        function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
         x.className += " responsive";
