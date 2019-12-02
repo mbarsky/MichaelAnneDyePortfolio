@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 
-.press-header{
+.press-h2{
   font-family: 'PT Serif', serif;
   font-size: 40px;
   margin: 30px;
   text-align: center;
 }
 
-/* h2{
-  font-size: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-} */
-
 a {
   color: #9C5A78;
-  text-decoration: none
+  text-decoration: none;
 }
 
 p {
@@ -50,7 +44,7 @@ nav a:hover{
   text-decoration: underline;
 }
 
-header{
+.press-header{
   /* background-attachment: fixed;
   background-image: url("../images/header3.jpg");
   background-position: center;
@@ -65,7 +59,7 @@ header{
   grid-row: 2/3;
 }
 
-header h1 {
+.press-header h1 {
   font-family: "PT Serif", "serif";
   text-align: center;
   padding-top: 80px;
@@ -74,11 +68,11 @@ header h1 {
   color: white;
 }
 
-header {
+.press-header {
   text-align: center;
 }
 
-header p {
+.press-header p {
   color: white;
 }
 
@@ -101,7 +95,7 @@ header p {
   border: 2px solid black;
 }
 
-.container{
+.p1-container{
 
   display: grid;
   grid-template-columns: 1fr;
@@ -139,7 +133,7 @@ header p {
 
 @media screen and (min-width: 750px){
 
-.press-header{
+.press-h2{
     text-align: left;
   }
 
@@ -149,7 +143,7 @@ header p {
     font-family: 'Rubik', sans-serif;
   }
 
-  .container{
+  .p1-container{
     grid-template-rows: 70px 300px;
   }
 
