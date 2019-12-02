@@ -16,7 +16,7 @@ h2 {
 }
 
 a {
-  color: #9C5A78;
+  color: #b5584c;
   text-decoration: none
 }
 
@@ -73,13 +73,25 @@ footer{
   grid-column: 1 / -1;
   grid-row: 6/7;
   padding-top: 30px;
-  text-align: center;
+  text-align: left;
+  min-height: 150px;
 }
 
-.container{
+footer a, footer p {
+  font-family: 'Rubik', sans-serif;
+  margin-left: 50px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.container-h {
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 50px 1fr 50px;
   grid-template-rows: 70px 300px auto auto auto 150px;
   width: 100vw;
 }
@@ -95,13 +107,9 @@ footer{
 }
 
 header{
-  background-attachment: fixed; /* Parallax effect */
-  background-image: url("../images/header1.jpg");      /* Your code here - Link to header.jpg in the images folder */
-  background-position: center;  /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;       /* Parallax effect */
   color: white;
-  height: 300px;                /* Parallax effect */
+  height: 300px;              
+  background-color: #b5584c;
 
   grid-column: 1/-1;
   grid-row: 2/3;
@@ -119,17 +127,17 @@ header {
 
 .intro {
   grid-row: 3/4;
-  grid-column: 2/-2;
-  padding: 50px 100px 50px 50px;
+  grid-column: 2/3;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .intro img {
-  padding-right: 50px;
+  padding-right: 20px;
 }
 
 .recent-news {
   grid-row: 4/5;
-  margin-left: 50px;
   grid-column: 2/-2;
 }
 
@@ -155,3 +163,52 @@ header {
     border: 3px solid #000;
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
     max-width: 25vw;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .container-h {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .intro {
+    grid-column: 2/-2;
+    padding: 50px 100px 50px 50px;
+  }
+
+  .intro img {
+    padding-right: 50px;
+  }
+
+  .recent-news {
+    grid-row: 4/5;
+    margin-left: 50px;
+    grid-column: 2/-2;
+  }
+
+  .body-text {
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+
+  .image-gallery {
+    grid-row: 5/6;
+    grid-column: 2/-2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .image-gallery img {
+      margin: 10px;
+      border: 3px solid #000;
+      box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+      max-width: 25vw;
+  }
+
+};
+
