@@ -45,16 +45,9 @@ nav a:hover{
 }
 
 .press-header{
-  /* background-attachment: fixed;
-  background-image: url("../images/header3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;        */
   background-color: #AC417F;
   height: 300px;
   width: 100%;
-
-  /*Your code here - cover the entire row*/
   grid-column: 1/-1;
   grid-row: 2/3;
 }
