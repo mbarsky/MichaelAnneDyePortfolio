@@ -7,8 +7,6 @@ html{
 
 h1{
     font-size: 50px;
-    line-height: 1;
-    padding: 50px 0;
     text-align: center;
   }
 
@@ -55,14 +53,13 @@ li a:visited {
 }
 
 a {
-    color: #B78CA2;
+    color: #935E77;
     text-decoration: none;
 }
 
 p {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
-    color: #65728A;
 }
 
 
@@ -93,11 +90,19 @@ footer{
     background-color: #65728A;
     color: white;
     grid-column: 1 / -1;
-    grid-row: 11/12;
-    padding-top: 30px;
-    text-align: center;
+    grid-row: -2/-1;
+    text-align: left;
+
 }
 
+footer a{
+  color: white;
+  text-decoration: underline;
+}
+footer a, footer p {
+  margin-left: 50px;
+  line-height: 1.5;
+}
 .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -112,11 +117,11 @@ footer{
     margin: 5px 2px;
 }
 
-.container{
+.pub-container {
   display: grid;
   grid-template-columns: 100px 500px 100px;
   grid-row-gap: 15px;
-  grid-template-rows: 115px auto auto auto auto auto auto auto auto auto 100px;
+  grid-template-rows: 140px auto auto auto auto auto auto auto auto auto 150px;
   width: 100vw;
 }
 
@@ -133,14 +138,11 @@ footer{
 
 
 header{
-    background-attachment: fixed;
-    background-image: url("../images/header4.jpg");
+    background-color: #935E77;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
-    display: grid;
     height: 300px;
+    width: 100%;
     grid-column: 1/-1;
     grid-row: 2/3;
   }
@@ -150,6 +152,7 @@ header h1 {
     text-align: center;
     padding-top: 80px;
     font-size: 50px;
+    margin: 30px;
 }
 
 header {
@@ -315,9 +318,9 @@ img:hover{
 
 @media only screen and (min-width: 800px) {
 
-  .container{
+  .pub-container{
     display:grid;
-    grid-template-rows: 70px 300px 800px 800px 800px 800px 800px 800px 800px 800px 100px;
+    grid-template-rows: 70px 300px 800px 800px 800px 800px 800px 800px 800px 800px 150px;
     grid-template-columns: 50px auto 500px auto 50px;
   }
 

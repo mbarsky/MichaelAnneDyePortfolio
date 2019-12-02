@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 
-.press-header{
+.press-h2{
   font-family: 'PT Serif', serif;
   font-size: 40px;
   margin: 30px;
   text-align: center;
 }
 
-/* h2{
-  font-size: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-} */
-
 a {
   color: #9C5A78;
-  text-decoration: none
+  text-decoration: none;
 }
 
 p {
@@ -50,22 +44,15 @@ nav a:hover{
   text-decoration: underline;
 }
 
-header{
-  /* background-attachment: fixed;
-  background-image: url("../images/header3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;        */
+.press-header{
   background-color: #AC417F;
   height: 300px;
   width: 100%;
-
-  /*Your code here - cover the entire row*/
   grid-column: 1/-1;
   grid-row: 2/3;
 }
 
-header h1 {
+.press-header h1 {
   font-family: "PT Serif", "serif";
   text-align: center;
   padding-top: 80px;
@@ -74,11 +61,11 @@ header h1 {
   color: white;
 }
 
-header {
+.press-header {
   text-align: center;
 }
 
-header p {
+.press-header p {
   color: white;
 }
 
@@ -101,7 +88,7 @@ header p {
   border: 2px solid black;
 }
 
-.container{
+.p1-container{
 
   display: grid;
   grid-template-columns: 1fr;
@@ -136,10 +123,28 @@ header p {
   margin: 40px;
 }
 
+#press-footer{
+  background-color: #474747;
+  color: white;
+  padding-top: 30px;
+  text-align: left;
+  min-height: 150px;
+  margin: 0px;
+}
+
+#press-footer a, #press-footer p{
+  color: white;
+  text-decoration: underline;
+  font-family: 'Rubik', sans-serif;
+  margin-left: 50px;
+  line-height: 1.5;
+}
+
+
 
 @media screen and (min-width: 750px){
 
-.press-header{
+.press-h2{
     text-align: left;
   }
 
@@ -149,14 +154,15 @@ header p {
     font-family: 'Rubik', sans-serif;
   }
 
-  .container{
+  .p1-container{
     grid-template-rows: 70px 300px;
   }
+
 
   .press-container{
     display: grid;
     grid-template-columns: 50px auto auto auto 50px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr auto;
     grid-row-gap: 20px;
     grid-column-gap: 30px;
   }
@@ -240,12 +246,27 @@ header p {
     grid-row: 5;
   }
 
+  #press-footer{
+    background-color: #474747;
+    color: white;
+    grid-column: 1 / -1;
+    grid-row: -1;
+    padding-top: 30px;
+    text-align: left;
+    min-height: 150px;
+    margin: 0;
+  }
+
+
+
+
+
 }
 
 @media screen and (min-width: 1150px){
   .press-container{
     grid-template-columns: 100px auto auto auto auto 100px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr auto;
   }
 
   .entry-1{
